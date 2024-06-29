@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s;
+}
+
+#quiz {
+    display: none;
+    animation: slideIn 1s forwards;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 60px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #00c9ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #00b0e6;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#score {
+    display: none;
+    font-size: 1.5em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
